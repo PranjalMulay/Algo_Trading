@@ -1,4 +1,6 @@
 const WebSocket = require('ws');
+const { calculateSMA } = require('./SMA');
+const { calculateEMA } = require('./EMA');
 
 let Data;
 let OpenData;
@@ -50,11 +52,16 @@ setTimeout(
             const value = Low[key];
             LowValues.push(value);
           }
+
+        const ndays = 15;
+        const smaSeries = calculateSMA(CloseValues, ndays);
+        console.log(smaSeries);
+        // console.log(calculateEMA);
         
-        console.log(OpenValues);
-        console.log(CloseValues);
-        console.log(HighValues);
-        console.log(LowValues);
+        // console.log(OpenValues);
+        // console.log(CloseValues);
+        // console.log(HighValues);
+        // console.log(LowValues);
     }
     ,1500)
 
