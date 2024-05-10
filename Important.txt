@@ -1,0 +1,179 @@
+
+		
+
+					ABSTRACT: 
+ 
+		2016 survey paper on stock market prediction (changes to be done)
+
+	Stock market prediction involves predicting future value of company stock or other financial instrument 
+traded on an exchange. Various types of trading can be done in stock market. It could be short term trading or even 
+long term trading but if someone can predict the value or class of that entity, it can yield very good return for the 
+investment done. Prior to evolution of digital world, predictors continued to use paper work methods like fundamental 
+and technical analysis. Various useful technical indicators like SMA, EMA, MACD found to be very useful but with the 
+advent of computer technologies and algorithms, prediction moved into technological realm. Analysts started building 
+prediction system using Neural Network, Support Vector Machine, Decision Trees, Hidden Markov Model. Prediction 
+accuracy really improved using algorithmic approach.This surveycovers various traditional as well asevolutionary data 
+mining techniques used for stock market prediction.
+
+KEYWORDS: Stock trading, data mining, support vector machine, neural network,hidden markovmodel, decision trees, technical indicators
+
+
+		2023 - Stock Price Prediction using Moving Average Time Series(need to be evaluated)
+
+The moving average method is widely used in time-series forecasting, it is one of widely known technical indicator used to predict the stock market future data in 
+time series analysis. During its' development, many variation and implementation have been made by researchers. One of its' widely used variation is Exponential
+Moving Average (EMA). Basically, EMA is an improvement of Weighted Moving Average (WMA) that gives a special weighting to more recent data than the 
+older data, which could not be found in Simple Moving Average (SMA) method. This paper aims to introduce comparative approach of moving average method in 
+time series analysis.
+Keyword:- Moving average, weighted moving average, Stock, Trading, Trend, time series analysis etc.
+
+
+	
+
+				I. INTRODUCTION
+
+		2016 - survey paper on stock market prediction (changes to be done)
+
+Goal behind making any financial investment is to achieve above average return for invested money while 
+maintaining certain level of involved risks [1] but as the stock market is a very complex, volatile and non-linear 
+dynamical system, stock market prediction has become a tough challenge for researchers and investors.
+Traditionally majority analysts depend on Fundamental analysis methods [3].Fundamental analysis is all about using 
+concrete information about a company's business to try to find the real value of a stock. It is the investigation of the 
+forces that affect the well being of the economy, industry groups, and companies. As with most analysis, the goal is to 
+derive a forecast and profit from future price movements. 
+For day trading or short term trading Technical analysis [4],[5]found to be very effective. It not only enables the 
+trader to define a concrete opinion on a particular stock or index but also helps to define
+the trade keeping in mind the 
+entry, exit and risk perspective. Technical analysis involves use offunctions, formulas such as indicators and oscillators 
+derived by time series, and heuristic rules able to revealsignals of change in the market trends. Popular examplesof 
+methods are Moving Average Convergence Divergence(MACD), Relative Strength Index (RSI), and stochastic 
+oscillator [3] Result of technology evolution invented machine learning methods for stock price prediction. Various 
+new data mining methods and algorithms are proposed like Genetic Algorithm (GA), Support Vector Machine(SVM), 
+Neural Networks (NNs).
+This survey paper has been organized as follows. In Section II we discussvarious proposed methods used for stock 
+market prediction. Basicsof fundamental analysis used in trading stocks,most popular technical indicators being used 
+for stock market prediction and various machine learning methods, algorithms that can used in this prediction followed 
+by conclusion and references.
+
+
+		2023 - Stock Price Prediction using Moving Average Time Series(need to be evaluated)
+Time-series data analysis method is becoming very important in many industries like financial industries, pharmaceuticals, social media companies, web 
+service providers, research, and many more. Some of them are using Simple Moving Average (SMA), Exponential Moving Average (EMA), Weighted 
+Moving Average (WMA) etc[1-3]. Some others are using soft computing methods such as neural network, fuzzy interface system [4-8] to predict their
+future values of a given time series data set. Some other even combine and develop hybrid forecasting methods, such as nero-fuzzy, wavelet-neural 
+networks and fuzzy-wavelet method[9-11].
+In this study the comparative analysis of the moving average methods is discussed by comparing their performance.
+
+
+
+
+
+	
+
+			B. TECHNICAL ANALYSIS (INDICATORS)
+
+		2016 - Survey Paper on Stock Market Prediction (need to be evaluated)
+
+Largenumber of technical indicators is available for technical analysis. They use various statistics generated in the 
+market like closing prices of history, volume traded etc. Earlier in 1960s and 1970s severalresearchers studied trading 
+rules based on TIs. Though they did notfind them much profitable [13],[14] recent studies [15],[16]show that they are 
+very useful.Commonly used TIs aresimple moving averages (SMA), exponential moving averages (EMA), moving 
+average convergence divergence (MACD), exponential moving average (EMA) and relative strength index (RSI).
+
+			2023 - Stock Price Prediction using Moving Average Time Series
+
+1. Simple Moving Averages (SMA)
+
+	Moving averages give smooth price data to form a trend following indicator. Though they cannot predict price 
+direction, but rather give some ideal about the current direction with a lag. Moving averages include lag because they 
+are computedusing past prices. Despite this lag, moving averages gives smooth price action and filter out the noise.
+They are also useful as the building blocks for many other technical indicators and overlays, such as bollinger 
+bands, MACD and the McClellan Oscillator.
+	A simple moving average is computedas the average price of a security over a specific number of periods. Most 
+moving averages are calculated using closing prices. A 5-day simple moving average is the five day sum of closing 
+prices divided by five. As its name indicates, a moving average is an average that moves. Past data is averaged as new 
+data becomes available. This causes the average to move along the time scale. Below is an example of a 5-day moving average evolving over three days.
+
+Daily closing prices = 6010, 6020, 6030, 6040, 6050, 6060, 6070
+First day of 5-Days SMA = (6010 + 6020 + 6030 + 6040 + 6050) / 5 = 6030
+Second day of 5-Days SMA= (6020 + 6030 + 6040 + 6050 +6060) / 5 = 6040
+Third day of 5-Days SMA= (6030 + 6040 + 6050 +6060+6070) / 5 = 6050
+Yu-Feng Lin, Chien-Feng Huang, Vincent S. Tseng used Simple moving Averages along with a technique of episode 
+mining [17]. 
+
+2. Exponential Moving Average (EMA)
+
+	The lag in SMA can be reduced by applying more weight to recent prices. EMA is the extension of SMA. The 
+weighting applied to the most recent price depends on the number of periods in the moving average. There are three 
+steps to calculating an exponential moving average. In first step simple moving average is caluclated. An exponential 
+moving average (EMA) has to start somewhere so a simple moving average is used as the previous period's EMA in the 
+first calculation. In second step, the multiplier (weighing multiplier) is computed. Finally, the exponential moving 
+average can be computed using the formula.A 12-day EMA can be computed as follows.
+
+SMA: 12 period sum / 12
+Multiplier: (2 / (Time periods + 1)) = (2 / (12 + 1)) = 0.1538 (15.38%)
+EMA: {Close - EMA (previous day)} x multiplier + EMA (previous day
+
+	A 12-period exponential moving average applies 15.38% weighting to the most recent price. A 12-period EMA can 
+also be called an15.38% EMA. A 20-period EMA applies a 9.52% weighing to the most recent price (2/(20+1) = 
+.0952). Notice that the weighing multiplier for the shorter time period is greater than the weighing multiplier for the 
+longer time period. In fact, the weighting drops by half every time the moving average period 
+doubles. YauheniyaShynkevich, T.M. McGinnity, Sonya Coleman, Yuhua Li, AmmarBelatreche [18] used EMA to 
+predict the directions of the future price movements.
+
+
+				2016- Survey Paper on Stock Market Prediction
+
+			CONCLUSION AND FUTURE SCOPE(more content need to be added)
+
+Technical indicators look to predict the future price levels by looking at past patterns and hence useful for long term trading as well as short term trading.
+ SMA smoothen the price movement thus eliminating most fake outs but it also cause a lag in buying and selling signals. 
+EMA reduces the lag by applying more weight to recent prices hence better than SMA in terms of recent movements in 
+the market. 
+
+
+		2023- Stock Price Prediction using Moving Average Time Series
+. Moving Average Methods
+	A] Simple Moving Average (SMA) :
+		A. Simple Moving Average (SMA) A Simple Moving Average (SMA) is a common average of the previous n data points in time series data. 
+	Each point in the time series data is equally weighted, so there are no weighting factors applied to any of the data points. A simple moving 
+	average computes the mean of the past N data points and takes this value as the predicted N+1 value [12]
+		SMA = {Pm + Pm-1 + ...+ Pm-(n-1)} / 2 (image on the group)
+
+	Where PM, PM-(n-1) and n are immediate data points that occur before the present, to predict the present data point, the size of SMA is n. The SMA is our 
+	predicted value. The precision of the model will vary significantly with the choice of n. Higher n would mean that we are willing to go deeper into the 
+	past to compute the present value.
+
+		SMA today = {Pm/n} + SMA yesterday - Pm-n / n  (image on the group)
+
+	B]Exponential moving average (EMA) :
+		Exponential Moving Average (EMA) An Exponential Moving Average (EMA) is a type of WMA which assigns a weighting factor to each 
+	value in the data series according to its age. Like WMA, in EMA the most recent data gets the greatest weight and each data value gets a smaller weight as we go back chronologically.
+ But unlike WMA, in EMA the weighting for each older data point decreases exponentially, so its’ never reaching zero [14]. The EMA for a time 	series can be calculated recursively as
+
+		      ( Formula image provided in group)
+
+	where St is the value at time period , Yt is the value of at time period , and 	represents the degree of weighting decrease, a constant smoothing factor 
+	between 0 and 1. Commonly, is calculated using the formula
+
+		      ( Formula image provided in group)
+
+
+				Result and Discussion :
+	           2023 - Stock Price Prediction using Moving Average Time Series
+The statistics and chart indicates Simple Moving Average just calculates the average value by performing a mean operation on given data but it changes 
+from interval to interval. But whereas in Exponential Moving Average also uses Simple Mean Average in calculating its average but gives more weightage 
+to the newly added value as the latest value has more weightage.
+EMA values is little smoothened when compared to Original Stock values indicates the nature of Exponential Moving Averages.
+
+
+		(Add fig for SMA , EMA and both together)
+
+
+
+
+		2023- Stock Price Prediction using Moving Average Time Series
+				. Conclusion (need to be evaluated)
+In this study the experimental work is carried out on the SMA and EMA. The comparative analysis is represented using cumulative moving average. It 
+is observed that EMA is best moving average method as compared to SMA for the presented financial time series data. To support the performance of 
+this moving average the stochastic regression method is used to observe the good quality approach. 
